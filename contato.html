@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Bronx Engenharia - Entre em Contato</title>
+    <meta name="description" content="Entre em contato com a Bronx Engenharia. Atendemos em toda Santa Catarina com soluções completas em construção industrial.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo funod transparente.png" alt="Bronx Engenharia" class="logo-img">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="10" y1="2" x2="10" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="10" y1="16" x2="10" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="18" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="4" y1="10" x2="2" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="15.5" y1="4.5" x2="14.1" y2="5.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="5.9" y1="14.1" x2="4.5" y2="15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="15.5" y1="15.5" x2="14.1" y2="14.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="5.9" y1="5.9" x2="4.5" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17 10.5C16 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 2 7.5 1C7 2 6.5 3.5 6.5 5.5C6.5 9.5 9.5 12.5 13.5 12.5C15.5 12.5 17 12 18 11.5C17.5 11 17 10.5 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <a href="orcamento.html" class="nav-cta">Solicitar Orçamento</a>
+
+            <!-- Botão hambúrguer: apenas mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu-panel" id="mobileMenuPanel">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="logo funod transparente.png" alt="Bronx Engenharia">
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <line x1="2" y1="2" x2="16" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <line x1="16" y1="2" x2="2" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">
+                Home
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="sobre.html">
+                Sobre
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="servicos.html">
+                Serviços
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="projetos.html">
+                Projetos
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="contato.html" class="active">
+                Contato
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="orcamento.html" class="mobile-cta">Solicitar Orçamento</a>
+        </div>
+    </div>
+
+    <!-- HERO INTERNO -->
+    <section class="hero hero-interno">
+        <div class="hero-grid"></div>
+        <div class="container-hero">
+            <div class="hero-content">
+                <div class="hero-eyebrow">FALE CONOSCO</div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-title-light">ENTRE EM</span>
+                    <span class="hero-title-bold">CONTATO.</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Nossa equipe está pronta para atender você
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato-secao">
+        <div class="container">
+            <div class="contato-grid">
+                <!-- Formulário -->
+                <div class="contato-form-wrapper">
+                    <h2>Envie sua Mensagem</h2>
+                    <p class="form-intro">Preencha o formulário abaixo e retornaremos o mais breve possível</p>
+                    
+                    <form class="contato-form" id="contatoForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <select id="assunto" name="assunto">
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="orcamento">Solicitar Orçamento</option>
+                                    <option value="projeto">Informações sobre Projeto</option>
+                                    <option value="duvida">Dúvida Técnica</option>
+                                    <option value="parceria">Parceria Comercial</option>
+                                    <option value="outro">Outro Assunto</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <!-- Informações de Contato -->
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="contato-item">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 8L12 13L21 8" stroke="currentColor" stroke-width="2"/>
+                                <rect x="3" y="6" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contato-texto">
+                            <h4>E-mail</h4>
+                            <a href="mailto:contato@bronxengenharia.com.br">contato@bronxengenharia.com.br</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-item">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 4H9L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contato-texto">
+                            <h4>Telefone</h4>
+                            <a href="tel:+5548999385954">(48) 99938-5954</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-item">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contato-texto">
+                            <h4>Localização</h4>
+                            <p>Florianópolis, Santa Catarina</p>
+                            <p class="contato-obs">Atendemos em todo o estado de SC</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-item">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contato-texto">
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 07h às 18h</p>
+                            <p>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-redes">
+                        <h4>Redes Sociais</h4>
+                        <div class="redes-links">
+                            <a href="https://linkedin.com/company/bronx-engenharia" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M26.667 4H5.333C4.6 4 4 4.6 4 5.333v21.334C4 27.4 4.6 28 5.333 28h21.334C27.4 28 28 27.4 28 26.667V5.333C28 4.6 27.4 4 26.667 4zM11.333 25.333H7.333V13.333h4v12zm-2-13.666c-1.267 0-2.333-1.067-2.333-2.334s1.066-2.333 2.333-2.333c1.267 0 2.334 1.066 2.334 2.333s-1.067 2.334-2.334 2.334zm16.334 13.666h-4v-6c0-1.467-.934-2.333-2-2.333-1.067 0-2 .866-2 2.333v6h-4V13.333h4v1.667c.6-.934 1.733-1.667 3.333-1.667 2.2 0 4.667 1.667 4.667 5v6.667z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16 10.667a5.333 5.333 0 100 10.666 5.333 5.333 0 000-10.666zm0 8.8a3.467 3.467 0 110-6.934 3.467 3.467 0 010 6.934z" fill="currentColor"/>
+                                    <path d="M22 4h-12A6 6 0 004 10v12a6 6 0 006 6h12a6 6 0 006-6V10a6 6 0 00-6-6zm3.867 18a3.867 3.867 0 01-3.867 3.867h-12A3.867 3.867 0 016.133 22V10A3.867 3.867 0 0110 6.133h12A3.867 3.867 0 0125.867 10v12z" fill="currentColor"/>
+                                    <circle cx="22.667" cy="9.333" r="1.333" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/5548999385954?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bronx%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                    <path d="M23.296 19.176c-.396-.198-2.344-1.156-2.707-1.29-.363-.132-.628-.198-.893.2-.264.396-1.023 1.288-1.254 1.552-.23.265-.462.298-.858.1-.396-.2-1.674-.617-3.187-1.967-1.177-1.05-1.973-2.348-2.204-2.745-.23-.396-.024-.61.174-.808.178-.177.396-.462.594-.693.2-.232.264-.397.397-.662.132-.264.066-.495-.033-.693-.1-.198-.892-2.15-1.222-2.943-.323-.772-.65-.667-.892-.68-.23-.012-.495-.013-.76-.013-.264 0-.693.1-1.056.496-.363.396-1.387 1.355-1.387 3.305 0 1.95 1.42 3.834 1.617 4.1.198.264 2.795 4.266 6.77 5.982.945.408 1.682.652 2.258.834.95.302 1.814.26 2.495.157.762-.113 2.344-.96 2.675-1.884.33-.926.33-1.718.23-1.884-.1-.165-.363-.264-.76-.462m-7.228 9.87h-.005a13.16 13.16 0 01-6.708-1.837l-.482-.286-4.988 1.31 1.33-4.864-.314-.498a13.147 13.147 0 01-2.013-7.013c.002-7.267 5.915-13.178 13.184-13.178 3.52 0 6.83 1.373 9.317 3.864a13.1 13.1 0 013.857 9.325c-.003 7.267-5.915 13.177-13.18 13.177m11.217-24.396A15.753 15.753 0 0016.067 0C7.327 0 .213 7.113.21 15.856c0 2.795.73 5.523 2.117 7.927L.076 32l8.407-2.206a15.843 15.843 0 007.577 1.93h.007c8.738 0 15.853-7.113 15.857-15.858a15.76 15.76 0 00-4.64-11.216z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo funod transparente.png" alt="Bronx Engenharia" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Construindo o futuro da engenharia industrial em Santa Catarina</p>
+                    
+                    <div class="footer-social">
+                        <a href="https://g.page/bronx-engenharia" target="_blank" rel="noopener" aria-label="Google Meu Negócio">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C6.102 0 3 3.102 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.898-3.102-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/bronx-engenharia" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 2.5H3.333C2.875 2.5 2.5 2.875 2.5 3.333v13.334c0 .458.375.833.833.833h13.334c.458 0 .833-.375.833-.833V3.333c0-.458-.375-.833-.833-.833zM7.083 15.833H4.583V8.333h2.5v7.5zm-1.25-8.541c-.792 0-1.458-.667-1.458-1.459s.666-1.458 1.458-1.458c.792 0 1.459.666 1.459 1.458s-.667 1.459-1.459 1.459zm10.584 8.541h-2.5v-3.75c0-.917-.584-1.458-1.25-1.458-.667 0-1.25.541-1.25 1.458v3.75h-2.5V8.333h2.5v1.042c.375-.584 1.083-1.042 2.083-1.042 1.375 0 2.917 1.042 2.917 3.125v4.375z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Pinterest">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.176-4.068-2.845 0-4.516 2.135-4.516 4.34 0 .859.331 1.781.744 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S15.523 0 10 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@bronxengenharia" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M19.615 6.184c-.234-.877-.923-1.567-1.8-1.801C16.225 4 10 4 10 4s-6.225 0-7.815.383c-.877.234-1.566.924-1.8 1.801C0 7.774 0 10 0 10s0 2.226.385 3.816c.234.877.923 1.567 1.8 1.801C3.775 16 10 16 10 16s6.225 0 7.815-.383c.877-.234 1.566-.924 1.8-1.801C20 12.226 20 10 20 10s0-2.226-.385-3.816zM8 12.5v-5l5.2 2.5L8 12.5z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 6.667a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm0 5.5a2.167 2.167 0 110-4.334 2.167 2.167 0 010 4.334z" fill="currentColor"/>
+                                <path d="M13.75 2.5h-7.5A3.75 3.75 0 002.5 6.25v7.5a3.75 3.75 0 003.75 3.75h7.5a3.75 3.75 0 003.75-3.75v-7.5A3.75 3.75 0 0013.75 2.5zm2.417 11.25a2.417 2.417 0 01-2.417 2.417h-7.5a2.417 2.417 0 01-2.417-2.417v-7.5A2.417 2.417 0 016.25 3.833h7.5a2.417 2.417 0 012.417 2.417v7.5z" fill="currentColor"/>
+                                <circle cx="14.167" cy="5.833" r="0.833" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5548999385954?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bronx%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.05 2.91A9.933 9.933 0 0010.03 0C4.535 0 .067 4.467.065 9.964c-.001 1.757.458 3.472 1.33 4.992L0 20l5.188-1.36a9.972 9.972 0 004.768 1.213h.004c5.493 0 9.96-4.468 9.962-9.965a9.908 9.908 0 00-2.872-7.977zM10.03 18.26h-.003a8.28 8.28 0 01-4.22-1.155l-.303-.18-3.138.823.837-3.058-.198-.314a8.266 8.266 0 01-1.267-4.41c.002-4.572 3.722-8.291 8.296-8.291a8.25 8.25 0 015.865 2.433 8.23 8.23 0 012.425 5.868c-.002 4.574-3.722 8.293-8.294 8.293zm4.546-6.206c-.249-.125-1.474-.728-1.703-.81-.228-.083-.394-.125-.56.124-.166.25-.642.81-.787.976-.146.166-.29.187-.539.062-.249-.125-1.052-.388-2.004-1.236-.74-.66-1.24-1.476-1.385-1.724-.146-.25-.015-.384.11-.508.112-.112.249-.29.373-.436.125-.145.166-.25.25-.416.083-.166.041-.31-.021-.436-.062-.125-.56-1.352-.768-1.85-.203-.487-.409-.42-.56-.428-.145-.007-.31-.008-.476-.008-.166 0-.436.062-.664.31-.228.25-.872.852-.872 2.08 0 1.227.893 2.413 1.017 2.58.125.165 1.757 2.683 4.257 3.763.595.257 1.059.41 1.42.524.597.19 1.14.163 1.57.099.479-.072 1.474-.603 1.682-1.185.208-.582.208-1.08.146-1.185-.062-.104-.228-.166-.477-.29z"/>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@bronxengenharia" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0115.54 3h-3.09v12.4a2.592 2.592 0 01-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 004.3 1.38V7.3s-1.88.09-3.24-1.48z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <a href="servicos.html">Galpões Industriais</a>
+                    <a href="servicos.html">Galpões Logísticos</a>
+                    <a href="servicos.html">Centros de Distribuição</a>
+                    <a href="servicos.html">Projetos Comerciais</a>
+                    <a href="servicos.html">Gestão de Obras</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <a href="mailto:contato@bronxengenharia.com.br">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M2 4L8 8.5L14 4" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        contato@bronxengenharia.com.br
+                    </a>
+                    <a href="tel:+5548999385954">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3.5 1.5C3.5 1.22386 3.72386 1 4 1H6C6.27614 1 6.5 1.22386 6.5 1.5V4.5C6.5 4.77614 6.27614 5 6 5H4.5C4.5 7.48528 6.51472 9.5 9 9.5V8C9 7.72386 9.22386 7.5 9.5 7.5H12.5C12.7761 7.5 13 7.72386 13 8V10C13 10.2761 12.7761 10.5 12.5 10.5H10C5.85786 10.5 2.5 7.14214 2.5 3V1.5H3.5Z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        (48) 99938-5954
+                    </a>
+                    <a href="contato.html">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        Florianópolis, SC
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bronx Engenharia. Todos os direitos reservados.</p>
+                <p>Construindo com excelência</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5548999385954?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bronx%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/contato-form.js"></script>
+</body>
+</html>

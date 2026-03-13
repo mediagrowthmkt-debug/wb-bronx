@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronx Engenharia | Construção de Galpões Industriais em SC</title>
+    <meta name="description" content="Especialistas na construção de galpões industriais, logísticos e comerciais em Santa Catarina. Soluções completas chave na mão para empresas e investidores.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         NAVBAR
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo funod transparente.png" alt="Bronx Engenharia" class="logo-img">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="10" y1="2" x2="10" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="10" y1="16" x2="10" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="18" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="4" y1="10" x2="2" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="15.5" y1="4.5" x2="14.1" y2="5.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="5.9" y1="14.1" x2="4.5" y2="15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="15.5" y1="15.5" x2="14.1" y2="14.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="5.9" y1="5.9" x2="4.5" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17 10.5C16 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 2 7.5 1C7 2 6.5 3.5 6.5 5.5C6.5 9.5 9.5 12.5 13.5 12.5C15.5 12.5 17 12 18 11.5C17.5 11 17 10.5 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <a href="orcamento.html" class="nav-cta">Solicitar Orçamento</a>
+
+            <!-- Botão hambúrguer: apenas mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         MOBILE MENU OVERLAY
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu-panel" id="mobileMenuPanel">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="logo funod transparente.png" alt="Bronx Engenharia">
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <line x1="2" y1="2" x2="16" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <line x1="16" y1="2" x2="2" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="active">
+                Home
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="sobre.html">
+                Sobre
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="servicos.html">
+                Serviços
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="projetos.html">
+                Projetos
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="contato.html">
+                Contato
+                <svg class="mobile-nav-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="orcamento.html" class="mobile-cta">Solicitar Orçamento</a>
+        </div>
+    </div>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         HERO
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-image">
+            <img src="hero-bronx-oJLtoZwy.png" alt="Bronx Engenharia - Construção de Galpões">
+        </div>
+        <div class="container-hero">
+            <div class="hero-content">
+                <div class="hero-eyebrow">SANTA CATARINA, BRASIL</div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-title-light">CONSTRUÇÃO DE</span>
+                    <span class="hero-title-bold">GALPÕES.</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Construímos galpões industriais, logísticos e comerciais para empresas e investidores que buscam segurança, previsibilidade e gestão completa da obra.
+                </p>
+                
+                <p class="hero-description-secondary">
+                    Na Bronx Engenharia, sua obra é conduzida por especialistas desde o planejamento até a entrega final, através de um contrato único que centraliza todas as etapas da construção.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="projetos.html" class="btn-primary">Ver Obras Executadas</a>
+                    <a href="contato.html" class="btn-secondary">
+                        Solicitar Consultoria
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Anos de Experiência</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         ESPECIALISTAS EM CONSTRUÇÃO
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="sobre" id="sobre">
+        <div class="container-wide">
+            <div class="sobre-grid">
+                <div class="sobre-content">
+                    <div class="section-eyebrow">QUEM SOMOS</div>
+                    
+                    <h2 class="section-title">
+                        <span class="title-bold">ESPECIALISTAS</span>
+                        <span class="title-light">em Construção de Galpões</span>
+                    </h2>
+                    
+                    <p class="sobre-description">
+                        A Bronx Engenharia atua na construção de galpões industriais, logísticos e comerciais para empresas que buscam expandir suas operações ou investir em ativos imobiliários de alto valor.
+                    </p>
+                    
+                    <p class="sobre-description">
+                        Com atuação em Santa Catarina, nossa equipe conduz projetos completos com foco em:
+                    </p>
+                    
+                    <div class="sobre-list">
+                        <div class="sobre-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="#888888" stroke-width="1.5"/>
+                            </svg>
+                            <span>Eficiência estrutural</span>
+                        </div>
+                        <div class="sobre-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="#888888" stroke-width="1.5"/>
+                            </svg>
+                            <span>Planejamento técnico detalhado</span>
+                        </div>
+                        <div class="sobre-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="#888888" stroke-width="1.5"/>
+                            </svg>
+                            <span>Controle de custos</span>
+                        </div>
+                        <div class="sobre-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="#888888" stroke-width="1.5"/>
+                            </svg>
+                            <span>Execução com alto padrão de qualidade</span>
+                        </div>
+                    </div>
+                    
+                    <p class="sobre-conclusion">
+                        Nosso objetivo é entregar obras sólidas, funcionais e alinhadas às necessidades operacionais de cada cliente.
+                    </p>
+                    
+                    <a href="sobre.html" class="link-underline">Conheça nossa história completa →</a>
+                </div>
+                
+                <div class="sobre-image">
+                    <img src="carros.jpg" alt="Galpão Bronx Engenharia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         SERVIÇOS (CHAVE NA MÃO)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="servicos-header">
+                <div>
+                    <div class="section-eyebrow">MODELO COMPLETO</div>
+                    <h2 class="section-title">
+                        <span class="title-bold">CHAVE</span>
+                        <span class="title-light">na mão</span>
+                    </h2>
+                    <p class="servicos-subtitulo">gerenciamento completo da obra: do projeto à entrega</p>
+                    <p class="servicos-intro">
+                        Empresários e investidores muitas vezes não possuem tempo ou estrutura para administrar uma obra complexa. Por isso a Bronx Engenharia oferece um modelo completo chave na mão, assumindo o gerenciamento integral da obra — do primeiro estudo até a entrega final pronta para operação.
+                    </p>
+                </div>
+                
+                <div class="servicos-cta-card">
+                    <h3>Comece sua obra</h3>
+                    <p>Nossa equipe está preparada para entender sua necessidade e apresentar a melhor solução técnica e construtiva</p>
+                    <a href="orcamento.html" class="btn-outline">Solicitar Orçamento</a>
+                </div>
+            </div>
+            
+            <div class="servicos-list">
+                <div class="servico-item">
+                    <div class="servico-number">01</div>
+                    <div class="servico-content">
+                        <h3>Estudo de Viabilidade</h3>
+                        <p>Análise completa para garantir viabilidade técnica e financeira antes do início da obra</p>
+                    </div>
+                </div>
+                
+                <div class="servico-item">
+                    <div class="servico-number">02</div>
+                    <div class="servico-content">
+                        <h3>Desenvolvimento Técnico Executivo</h3>
+                        <p>Elaboração de projetos detalhados e especificações técnicas completas para a execução da obra</p>
+                    </div>
+                </div>
+                
+                <div class="servico-item">
+                    <div class="servico-number">03</div>
+                    <div class="servico-content">
+                        <h3>Execução e Acompanhamento Técnico</h3>
+                        <p>Supervisão contínua garantindo qualidade e segurança em cada etapa da construção</p>
+                    </div>
+                </div>
+                
+                <div class="servico-item">
+                    <div class="servico-number">04</div>
+                    <div class="servico-content">
+                        <h3>Aquisição e Gestão de Materiais</h3>
+                        <p>Responsabilidade integral pela compra, logística e controle de materiais ao longo de toda a obra</p>
+                    </div>
+                </div>
+                
+                <div class="servico-item">
+                    <div class="servico-number">05</div>
+                    <div class="servico-content">
+                        <h3>Entrega Final Pronto para Operação</h3>
+                        <p>Obra concluída, documentada e pronta para início imediato das atividades</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="servicos-beneficios">
+                <h3>Esse formato garante:</h3>
+                <div class="beneficios-grid">
+                    <div class="beneficio-item beneficio-destaque">Clareza contratual</div>
+                    <div class="beneficio-item beneficio-destaque">Maior previsibilidade financeira</div>
+                    <div class="beneficio-item beneficio-destaque">Redução de riscos</div>
+                    <div class="beneficio-item beneficio-destaque">Centralização da responsabilidade</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         PORTFÓLIO DE PROJETOS
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="projetos" id="projetos">
+        <div class="container">
+            <div class="section-eyebrow">NOSSO TRABALHO</div>
+            <h2 class="section-title">
+                <span class="title-bold">PORTFÓLIO</span>
+                <span class="title-light">de Obras</span>
+            </h2>
+            
+            <p class="projetos-intro">
+                A Bronx Engenharia executou obras para empresas e investidores que buscavam expandir suas operações ou desenvolver novos ativos imobiliários. Cada obra é desenvolvida de acordo com as necessidades específicas de operação, logística e investimento do cliente.
+            </p>
+            
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <img src="PROJETOS/galpoes/Centro de Distribuição Itajaí - SC.jpg" alt="Centro de Distribuição Itajaí - SC" class="projeto-image">
+                    <video src="PROJETOS/galpoes/Centro de Distribuição Itajaí - SC.mp4" class="projeto-video" muted loop playsinline></video>
+                    <div class="projeto-overlay">
+                        <h3 class="projeto-title">Centro de Distribuição</h3>
+                        <p class="projeto-location">Itajaí - SC</p>
+                    </div>
+                </div>
+                
+                <div class="projeto-card">
+                    <img src="PROJETOS/galpoes/Galpão Comercial Florianópolis - SC.jpg" alt="Galpão Industrial Florianópolis - SC" class="projeto-image">
+                    <video src="PROJETOS/galpoes/Galpão Comercial Florianópolis - SC.mp4" class="projeto-video" muted loop playsinline></video>
+                    <div class="projeto-overlay">
+                        <h3 class="projeto-title">Galpão Comercial</h3>
+                        <p class="projeto-location">Florianópolis - SC</p>
+                    </div>
+                </div>
+                
+                <div class="projeto-card">
+                    <img src="PROJETOS/galpoes/Galpão Gaspar - SC.jpg" alt="Galpão Gaspar - SC" class="projeto-image">
+                    <video src="PROJETOS/galpoes/Galpão Gaspar - SC.mp4" class="projeto-video" muted loop playsinline></video>
+                    <div class="projeto-overlay">
+                        <h3 class="projeto-title">Galpão</h3>
+                        <p class="projeto-location">Gaspar - SC</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projetos-footer">
+                <a href="projetos.html" class="btn-ghost">Ver todas as obras</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         DIFERENCIAIS (POR QUE BRONX)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="diferenciais">
+        <div class="container">
+            <div class="diferenciais-grid">
+                <div class="diferenciais-content">
+                    <div class="section-eyebrow">POR QUE INVESTIR</div>
+                    <h2 class="section-title">
+                        <span class="title-bold teal">BRONX</span>
+                        <span class="title-light">Engenharia</span>
+                    </h2>
+                    <p class="diferenciais-text">
+                        A construção de um galpão industrial envolve decisões técnicas e financeiras importantes. A Bronx Engenharia atua para reduzir riscos e garantir segurança em todas as etapas do projeto.
+                    </p>
+                    <a href="contato.html" class="btn-primary">Falar com Especialista</a>
+                </div>
+                
+                <div class="diferenciais-list">
+                    <div class="diferencial-item">
+                        <div class="diferencial-number">01</div>
+                        <h3>15 Anos de Experiência</h3>
+                        <p>Trajetória consolidada no mercado catarinense</p>
+                    </div>
+                    
+                    <div class="diferencial-item">
+                        <div class="diferencial-number">02</div>
+                        <h3>Especialização em Galpões</h3>
+                        <p>Foco exclusivo em construções industriais e logísticas</p>
+                    </div>
+                    
+                    <div class="diferencial-item">
+                        <div class="diferencial-number">03</div>
+                        <h3>Atendimento Direto</h3>
+                        <p>Comunicação transparente com os sócios da empresa</p>
+                    </div>
+                    
+                    <div class="diferencial-item">
+                        <div class="diferencial-number">04</div>
+                        <h3>Gestão Completa</h3>
+                        <p>Controle total da obra do início ao fim</p>
+                    </div>
+                    
+                    <div class="diferencial-item">
+                        <div class="diferencial-number">05</div>
+                        <h3>Equipe Técnica Qualificada</h3>
+                        <p>Profissionais especializados em cada etapa</p>
+                    </div>
+                    
+                    <div class="diferencial-item">
+                        <div class="diferencial-number">06</div>
+                        <h3>Previsibilidade e Entrega</h3>
+                        <p>Compromisso com prazos, orçamento e qualidade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         DEPOIMENTOS
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container-narrow">
+            <div class="section-eyebrow center">O QUE DIZEM NOSSOS CLIENTES</div>
+            
+            <div class="depoimento-wrapper">
+                <div class="depoimento-quote-mark">"</div>
+                
+                <blockquote class="depoimento-text">
+                    A Bronx Engenharia entregou nosso galpão logístico com segurança na execução e clareza em todas as etapas. A qualidade da construção e o comprometimento com prazos foram fundamentais para o sucesso do projeto.
+                </blockquote>
+                
+                <div class="depoimento-author">
+                    <div class="author-line"></div>
+                    <span class="author-name">João Silva</span>
+                    <span class="author-company">Diretor, Forte Logística</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-nav">
+                <span class="nav-dot active"></span>
+                <span class="nav-dot"></span>
+                <span class="nav-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         CTA FINAL
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="cta-final">
+        <div class="cta-grid"></div>
+        <div class="container-cta">
+            <h2 class="cta-title">
+                <span class="cta-title-light">COMECE SUA</span>
+                <span class="cta-title-bold">OBRA</span>
+            </h2>
+            <p class="cta-subtitle">Se sua empresa planeja expandir operações ou desenvolver um novo galpão industrial, a Bronx Engenharia pode conduzir todo o processo com segurança e organização</p>
+            
+            <div class="cta-buttons">
+                <a href="orcamento.html" class="btn-dark">Solicitar Orçamento</a>
+                <a href="contato.html" class="btn-ghost-dark">Falar com Especialista</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         FOOTER
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo funod transparente.png" alt="Bronx Engenharia" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Construindo o futuro da engenharia industrial em Santa Catarina</p>
+                    
+                    <div class="footer-social">
+                        <a href="https://g.page/bronx-engenharia" target="_blank" rel="noopener" aria-label="Google Meu Negócio">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C6.102 0 3 3.102 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.898-3.102-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/bronx-engenharia" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 2.5H3.333C2.875 2.5 2.5 2.875 2.5 3.333v13.334c0 .458.375.833.833.833h13.334c.458 0 .833-.375.833-.833V3.333c0-.458-.375-.833-.833-.833zM7.083 15.833H4.583V8.333h2.5v7.5zm-1.25-8.541c-.792 0-1.458-.667-1.458-1.459s.666-1.458 1.458-1.458c.792 0 1.459.666 1.459 1.458s-.667 1.459-1.459 1.459zm10.584 8.541h-2.5v-3.75c0-.917-.584-1.458-1.25-1.458-.667 0-1.25.541-1.25 1.458v3.75h-2.5V8.333h2.5v1.042c.375-.584 1.083-1.042 2.083-1.042 1.375 0 2.917 1.042 2.917 3.125v4.375z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Pinterest">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.176-4.068-2.845 0-4.516 2.135-4.516 4.34 0 .859.331 1.781.744 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S15.523 0 10 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@bronxengenharia" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M19.615 6.184c-.234-.877-.923-1.567-1.8-1.801C16.225 4 10 4 10 4s-6.225 0-7.815.383c-.877.234-1.566.924-1.8 1.801C0 7.774 0 10 0 10s0 2.226.385 3.816c.234.877.923 1.567 1.8 1.801C3.775 16 10 16 10 16s6.225 0 7.815-.383c.877-.234 1.566-.924 1.8-1.801C20 12.226 20 10 20 10s0-2.226-.385-3.816zM8 12.5v-5l5.2 2.5L8 12.5z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/bronxengenharia" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 6.667a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm0 5.5a2.167 2.167 0 110-4.334 2.167 2.167 0 010 4.334z" fill="currentColor"/>
+                                <path d="M13.75 2.5h-7.5A3.75 3.75 0 002.5 6.25v7.5a3.75 3.75 0 003.75 3.75h7.5a3.75 3.75 0 003.75-3.75v-7.5A3.75 3.75 0 0013.75 2.5zm2.417 11.25a2.417 2.417 0 01-2.417 2.417h-7.5a2.417 2.417 0 01-2.417-2.417v-7.5A2.417 2.417 0 016.25 3.833h7.5a2.417 2.417 0 012.417 2.417v7.5z" fill="currentColor"/>
+                                <circle cx="14.167" cy="5.833" r="0.833" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5548999385954?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bronx%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.05 2.91A9.933 9.933 0 0010.03 0C4.535 0 .067 4.467.065 9.964c-.001 1.757.458 3.472 1.33 4.992L0 20l5.188-1.36a9.972 9.972 0 004.768 1.213h.004c5.493 0 9.96-4.468 9.962-9.965a9.908 9.908 0 00-2.872-7.977zM10.03 18.26h-.003a8.28 8.28 0 01-4.22-1.155l-.303-.18-3.138.823.837-3.058-.198-.314a8.266 8.266 0 01-1.267-4.41c.002-4.572 3.722-8.291 8.296-8.291a8.25 8.25 0 015.865 2.433 8.23 8.23 0 012.425 5.868c-.002 4.574-3.722 8.293-8.294 8.293zm4.546-6.206c-.249-.125-1.474-.728-1.703-.81-.228-.083-.394-.125-.56.124-.166.25-.642.81-.787.976-.146.166-.29.187-.539.062-.249-.125-1.052-.388-2.004-1.236-.74-.66-1.24-1.476-1.385-1.724-.146-.25-.015-.384.11-.508.112-.112.249-.29.373-.436.125-.145.166-.25.25-.416.083-.166.041-.31-.021-.436-.062-.125-.56-1.352-.768-1.85-.203-.487-.409-.42-.56-.428-.145-.007-.31-.008-.476-.008-.166 0-.436.062-.664.31-.228.25-.872.852-.872 2.08 0 1.227.893 2.413 1.017 2.58.125.165 1.757 2.683 4.257 3.763.595.257 1.059.41 1.42.524.597.19 1.14.163 1.57.099.479-.072 1.474-.603 1.682-1.185.208-.582.208-1.08.146-1.185-.062-.104-.228-.166-.477-.29z"/>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@bronxengenharia" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0115.54 3h-3.09v12.4a2.592 2.592 0 01-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 004.3 1.38V7.3s-1.88.09-3.24-1.48z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <a href="servicos.html">Galpões Industriais</a>
+                    <a href="servicos.html">Galpões Logísticos</a>
+                    <a href="servicos.html">Galpões Comerciais</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <a href="mailto:contato@bronxengenharia.com.br">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M2 4L8 8.5L14 4" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        contato@bronxengenharia.com.br
+                    </a>
+                    <a href="tel:+5548999385954">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3.5 1.5C3.5 1.22386 3.72386 1 4 1H6C6.27614 1 6.5 1.22386 6.5 1.5V4.5C6.5 4.77614 6.27614 5 6 5H4.5C4.5 7.48528 6.51472 9.5 9 9.5V8C9 7.72386 9.22386 7.5 9.5 7.5H12.5C12.7761 7.5 13 7.72386 13 8V10C13 10.2761 12.7761 10.5 12.5 10.5H10C5.85786 10.5 2.5 7.14214 2.5 3V1.5H3.5Z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        (48) 99938-5954
+                    </a>
+                    <a href="contato.html">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        Porto Belo, SC
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bronx Engenharia. Todos os direitos reservados.</p>
+                <p>Construindo com excelência</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5548999385954?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bronx%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
