@@ -80,7 +80,7 @@ body.light-mode .hero-description-secondary { color: #ffffff !important; }
 body.light-mode .hero-pillars span { color: #222222; }
 body.light-mode .hero-stats .stat-item .stat-label { color: #000000; }
 body.light-mode .stat-number { color: #111111; }
-body.light-mode .hero .hero-buttons .btn-secondary { color: #7a7a7a; }
+body.light-mode .hero .hero-buttons .btn-secondary { color: #000000; }
 body.light-mode .btn-primary { background: #080808; color: #ffffff; }
 
 /* Sobre (home section) */
@@ -142,14 +142,15 @@ body.light-mode .valor-card p { color: #555555; }
 body.light-mode .valor-card ul li { color: #555555; }
 
 /* Serviços página */
-body.light-mode .servico-destaque { background: #f5f5f5; border-color: #dddddd; border-left-color: #aaaaaa; }
+body.light-mode .servico-destaque { background: #ffffff; border-color: #dddddd; border-left-color: #aaaaaa; }
 body.light-mode .servico-destaque h3 { color: #2ABFAA; }
 body.light-mode .servico-destaque p { color: #333333; }
 body.light-mode .servico-numero { color: #2ABFAA; }
 body.light-mode .servico-specs li { color: #333333; background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.15); }
 
 /* Processo */
-body.light-mode .processo-step { background: #f5f5f5; border-color: #dddddd; }
+body.light-mode .processo { background: #F5F5F5; }
+body.light-mode .processo-step { background: #ffffff; border-color: #dddddd; }
 body.light-mode .processo-step h3 { color: #111111; }
 body.light-mode .processo-step p { color: #444444; }
 body.light-mode .processo-numero { color: #2ABFAA; }
@@ -216,7 +217,8 @@ body.light-mode .beneficio-item { background: rgba(0,0,0,0.04); border-color: #c
 
 /* Section eyebrow / labels */
 body.light-mode .section-eyebrow { color: #2ABFAA; }
-body.light-mode .servicos-detalhado .title-bold { color: #ffffff !important; }
+body.light-mode .servicos-detalhado { background: #F5F5F5; }
+body.light-mode .servicos-detalhado .title-bold { color: #111111 !important; }
 body.light-mode .title-light { color: #888888; }
 
 * {
@@ -553,6 +555,7 @@ a {
     cursor: pointer;
     transition: var(--transition);
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .theme-toggle:hover {
@@ -1925,6 +1928,7 @@ body.light-mode .mobile-menu-btn span {
     line-height: 1.7;
     max-width: 70ch;
     margin-top: 16px;
+    margin-bottom: 1em;
 }
 
 /* Servicos Beneficios */
@@ -2613,6 +2617,8 @@ body.light-mode .mobile-menu-btn span {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
+
+body.light-mode .contato-redes h4 { color: #111111; }
 
 .redes-links {
     display: flex;
