@@ -516,6 +516,33 @@ class WhatsAppHandler {
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// VIDEO CARDS REVEAL (VÍDEOS DAS OBRAS)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+class VideoReveal {
+    constructor() {
+        this.cards = document.querySelectorAll('.reveal-up');
+        if (!this.cards.length) return;
+        this.init();
+    }
+
+    init() {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        this.cards.forEach(card => observer.observe(card));
+    }
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // MOBILE MENU
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 class MobileMenu {
@@ -591,6 +618,7 @@ document.addEventListener('DOMContentLoaded', () => {
         LazyLoadImages,
         WhatsAppHandler,
         MobileMenu,
+        VideoReveal,
     ];
 
     modules.forEach(Module => {

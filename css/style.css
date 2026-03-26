@@ -1092,6 +1092,215 @@ a {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   VÍDEOS DAS OBRAS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.videos-obras {
+    background: var(--color-bg);
+    padding: 120px 0;
+}
+
+.videos-intro {
+    font-size: 16px;
+    color: #b2b2b2;
+    line-height: 1.8;
+    max-width: 70ch;
+    margin-top: -16px;
+    margin-bottom: 56px;
+}
+
+/* GRID */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* CARD */
+.video-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55),
+                0 0 0 1px rgba(42, 191, 170, 0.18);
+    border-color: rgba(42, 191, 170, 0.22);
+}
+
+/* BADGE */
+.video-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 4;
+    background: var(--color-teal);
+    color: #000000;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+/* WRAPPER 16:9 */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #0a0a0a;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* PLACEHOLDER */
+.video-wrapper--placeholder {
+    background: #0d0d0d;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.video-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    color: var(--color-muted);
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 24px,
+        rgba(255, 255, 255, 0.018) 24px,
+        rgba(255, 255, 255, 0.018) 48px
+    );
+}
+
+.video-placeholder svg {
+    flex-shrink: 0;
+    opacity: 0.4;
+}
+
+.video-placeholder span {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--color-muted);
+}
+
+/* INFO */
+.video-info {
+    padding: 20px 24px 24px;
+}
+
+.video-tag {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.video-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.video-desc {
+    font-size: 13px;
+    color: var(--color-muted);
+    font-weight: 300;
+}
+
+/* ANIMAÇÃO REVEAL */
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(36px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal-up {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+.reveal-up.is-visible {
+    animation: revealUp 0.72s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-up.is-visible:nth-child(2) { animation-delay: 0.13s; }
+.reveal-up.is-visible:nth-child(3) { animation-delay: 0.26s; }
+
+/* LIGHT MODE */
+body.light-mode .videos-obras {
+    background: var(--color-surface);
+}
+
+body.light-mode .videos-intro {
+    color: #444444;
+}
+
+body.light-mode .video-card {
+    background: #ffffff;
+    border-color: #e0e0e0;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+body.light-mode .video-card:hover {
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.14),
+                0 0 0 1px rgba(42, 191, 170, 0.22);
+}
+
+body.light-mode .video-wrapper {
+    background: #f0f0f0;
+}
+
+body.light-mode .video-wrapper--placeholder {
+    background: #f5f5f5;
+    border-bottom-color: #e0e0e0;
+}
+
+body.light-mode .video-placeholder {
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 24px,
+        rgba(0, 0, 0, 0.025) 24px,
+        rgba(0, 0, 0, 0.025) 48px
+    );
+}
+
+body.light-mode .video-title { color: #111111; }
+body.light-mode .video-desc  { color: #666666; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    DIFERENCIAIS (POR QUE BRONX)
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .diferenciais {
@@ -1872,6 +2081,35 @@ body.light-mode .mobile-menu-btn span {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+    }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   RESPONSIVO — VÍDEOS DAS OBRAS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 1024px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .videos-obras {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .videos-obras {
+        padding: 60px 0;
+    }
+
+    .videos-intro {
+        font-size: 15px;
+        margin-bottom: 40px;
     }
 }
 
