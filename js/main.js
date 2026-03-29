@@ -246,6 +246,28 @@ class ServicoHover {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // PROJETO CARD EFFECTS
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// Gera thumbnail automática para cards com .projeto-thumb-auto
+document.querySelectorAll('.projeto-card').forEach(card => {
+    const thumb = card.querySelector('.projeto-thumb-auto');
+    const video = card.querySelector('.projeto-video');
+    if (!thumb || !video) return;
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    video.addEventListener('loadedmetadata', () => { video.currentTime = 1.5; });
+    video.addEventListener('seeked', function onSeeked() {
+        canvas.width  = video.videoWidth;
+        canvas.height = video.videoHeight;
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        thumb.src = canvas.toDataURL('image/jpeg', 0.85);
+        video.removeEventListener('seeked', onSeeked);
+    });
+    video.preload = 'metadata';
+    video.load();
+});
+
 class ProjetoCardEffects {
     constructor() {
         this.cards = document.querySelectorAll('.projeto-card');
