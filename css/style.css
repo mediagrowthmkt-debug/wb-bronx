@@ -468,10 +468,19 @@ a {
 }
 
 .navbar.scrolled {
-    background: rgba(8, 8, 8, 0.8);
-    backdrop-filter: blur(20px);
+    background: rgba(8, 8, 8, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
     padding: 12px 0;
+}
+
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .logo-main,
+.navbar.scrolled .logo-sub {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translateZ(0);
 }
 
 .nav-container {
@@ -2178,10 +2187,9 @@ body.light-mode .mobile-menu-btn span {
 
 /* Servicos Beneficios */
 .servicos-beneficios {
-    margin-top: 80px;
-    padding-top: 60px;
+    margin-top: 64px;
+    padding-top: 0;
     padding-bottom: 8px;
-    border-top: 1px solid var(--color-border);
 }
 
 .servicos-beneficios h3 {
@@ -2209,12 +2217,44 @@ body.light-mode .mobile-menu-btn span {
 }
 
 .beneficio-item.beneficio-destaque {
-    padding: 24px 28px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 2px solid #333333;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 24px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #2A2A2A;
+    border-top: 2px solid var(--color-teal);
+    border-radius: 10px;
+    font-size: 15px;
     font-weight: 700;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.beneficio-item.beneficio-destaque:hover {
+    background: rgba(42, 191, 170, 0.05);
+    border-color: rgba(42, 191, 170, 0.5);
+    border-top-color: var(--color-teal);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(42, 191, 170, 0.08);
+}
+
+.beneficio-destaque .beneficio-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: var(--color-teal-dim);
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.beneficio-item.beneficio-destaque:hover .beneficio-icon {
+    background: rgba(42, 191, 170, 0.15);
 }
 
 /* Projetos Intro */
