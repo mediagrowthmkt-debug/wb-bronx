@@ -71,7 +71,10 @@ body.light-mode .logo-sub { color: #555555; }
 body.light-mode .logo-dark { display: none; }
 body.light-mode .logo-light { display: block; }
 /* Remove brightness(0) para preservar o verde original do logo no modo claro */
-body.light-mode #navbar .nav-logo .logo-img { filter: none; }
+body.light-mode #navbar .nav-logo .logo-img {
+    content: url('../HERO_files/logo-escura-sM9MVFwh.png');
+    filter: none;
+}
 
 /* Hero */
 body.light-mode .hero-title-light { color: #000000 !important; }
