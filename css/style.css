@@ -70,7 +70,8 @@ body.light-mode .logo-sub { color: #555555; }
 .logo-light { display: none; }
 body.light-mode .logo-dark { display: none; }
 body.light-mode .logo-light { display: block; }
-body.light-mode #navbar .nav-logo .logo-img { filter: brightness(0); }
+/* Remove brightness(0) para preservar o verde original do logo no modo claro */
+body.light-mode #navbar .nav-logo .logo-img { filter: none; }
 
 /* Hero */
 body.light-mode .hero-title-light { color: #000000 !important; }
